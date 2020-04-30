@@ -299,6 +299,17 @@ void initGame() {
 
 	shuffle(dice,numDice);
 	setupBoard(board,dice);
+
+	if(numWords>0) {
+		for(i=0;i<numWords;i++) {
+			free(words[i]);
+			words[i]=NULL;
+		}
+		free(words);
+		words=NULL;
+		numWords=0;
+	}
+
 	getWords();
 
 	numGuessed=0;
