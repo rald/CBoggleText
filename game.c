@@ -314,7 +314,7 @@ int main() {
 
     char *str=NULL;
 
-    int maxx,maxy;
+    int maxx=0,maxy=0;
 
     int min,sec;
 
