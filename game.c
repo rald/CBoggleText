@@ -373,7 +373,7 @@ int main() {
 //            printf("%i\n",ch);
             if(ch==27) {
                 quit=true;
-            } else if(ch==263) {
+            } else if(ch==KEY_BACKSPACE) {
                 if(len>0) {
                     line[--len]='\0';
                     addch(8);
